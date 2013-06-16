@@ -105,4 +105,9 @@
     		<fileset dir="${ftp.dir}" includes="**"/>
   		</delete>
 	</target>
+	<target name="remove.svn" description="" >
+		<delete>
+			<fileset dir="." includes="**/.svn"/>
+		</delete>
+	</target>
 </project>
