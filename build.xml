@@ -106,8 +106,8 @@
   		</delete>
 	</target>
 	<target name="remove.svn" description="" >
-		<delete>
-			<fileset dir="." includes="**/.svn"/>
+		<delete verbose="true">
+			<fileset dir="." includes="**/.svn/" defaultexcludes="false"/>
 		</delete>
 	</target>
 </project>

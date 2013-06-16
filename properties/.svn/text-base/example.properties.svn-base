@@ -1,9 +1,0 @@
-# Example build file
-# @author James Little
-# @date 24/02/2008
-
-db.driver=mysql
-db.server=localhost
-db.user=root
-db.passwd=password
-db.name=database
