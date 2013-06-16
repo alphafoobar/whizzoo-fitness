@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	The build file is a major part of the big picture...
+	It allows us to formulate a build environment that is suitable for
+	development and also allow us to deploy to a local environment for testing
+	and to a server environment... for release.
+	
+	@author James Little
+	@date 30/1/2008
+	@version $Id: build.xml 60 2008-10-19 09:44:21Z alphafoobar $ 
+	
+	Read the manual: http://ant.apache.org/manual/
+
+ -->
+<project name="fitness" default="deploy_web" basedir=".">
+	<description> Fitness build file </description>
+	
+	<property name="ftp.dir"  location="../deploy"/>
+
+	<target name="new_project">
+  		<copy todir="../butter" includeEmptyDirs="true">
+    		<fileset dir=".">
+				<include name="**/*.php"/>
+				<include name="**/*.txt"/>
+				<include name="**/*.thtml"/>
+				<include name="**/*.xml"/>
+				<include name="**/*.js"/>
+				<include name="**/*.css"/>
+				<include name="**/.htaccess"/>
+    		</fileset>
+  		</copy>
+	</target>
+  
+  	<target name="deploy_web">
+    	<!-- Create the time stamp -->
+    	<tstamp/>
+
+  		<copy todir="${ftp.dir}">
+    		<fileset dir="src">
+				<include name="**/*.gif"/>
+				<include name="**/*.jpg"/>
+				<include name="**/*.bmp"/>
+				<include name="**/*.png"/>
+				<include name="**/*.ico"/>
+    		</fileset>
+    	</copy>
+  		<copy todir="${ftp.dir}/locale">
+    		<fileset dir="locale">
+				<include name="**/*.mo"/>
+				<include name="**/*.po"/>
+    		</fileset>
+    	</copy>
+
+    	<!-- 
+    		These files need to be constructed based on your local configuration:
+    		properties/build_web.properties
+    		Use the example.properties file as an example
+    	-->
+    	<filter filtersfile="properties/build.properties"/>
+  		<copy todir="${ftp.dir}" filtering="true" overwrite="false">
+    		<fileset dir="src">
+				<include name="**/*.php"/>
+				<include name="**/*.txt"/>
+				<include name="**/*.thtml"/>
+				<include name="**/*.html"/>
+				<include name="**/*.js"/>
+				<include name="**/*.css"/>
+				<include name="**/.htaccess"/>
+    		</fileset>
+  		</copy>
+	</target>
+	
+	<target name="ftp_dev" depends="deploy_web" description="ftp to internet dev" >
+	  	<property file="dev.properties"/>
+		<echo>
+			remote dir: ${ftp.rdir}
+		</echo>
+  		<ftp password="${ftp.pwd}" 
+  			userid="${ftp.usr}" 
+  			server="${ftp.url}" 
+  			verbose="yes" 
+  			remotedir="${ftp.rdir}" 
+  			depends="yes">
+  			<fileset dir="${ftp.dir}"></fileset>
+  		</ftp>
+	</target>
+	<target name="ftp_web" depends="deploy_web" description="ftp local" >
+  		<property file="local.properties"/>
+		<echo>
+			remote dir: ${ftp.rdir}
+		</echo>
+  		<ftp password="${ftp.pwd}" 
+  			userid="${ftp.usr}" 
+  			server="${ftp.url}" 
+  			verbose="yes" 
+  			remotedir="${ftp.rdir}" 
+  			depends="yes">
+  			<fileset dir="${ftp.dir}"></fileset>
+  		</ftp>
+	</target>
+  
+	<target name="clean" description="clean up" >
+		<!-- Delete the ${build} and ${dist} directory trees -->
+	  	<delete>
+    		<fileset dir="${ftp.dir}" includes="**"/>
+  		</delete>
+	</target>
+</project>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/util
+END
+Model.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/util/Model.php
+END
+Database.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/util/Database.php
+END
+HTML.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/util/HTML.php
+END
+String.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/util/String.php
+END
+DatabaseException.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/util/DatabaseException.php
+END

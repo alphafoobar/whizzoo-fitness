@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/xslt
+END
+build_weather_json.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/xslt/build_weather_json.xsl
+END
+test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/xslt/test.xml
+END
+XSLT.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/xslt/XSLT.php
+END

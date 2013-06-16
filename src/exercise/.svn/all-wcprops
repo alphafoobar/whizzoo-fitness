@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise
+END
+Session.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise/Session.php
+END
+ExerciseException.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise/ExerciseException.php
+END
+Exercise.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise/Exercise.php
+END
+Plan.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise/Plan.php
+END
+ExerciseTypes.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise/ExerciseTypes.php
+END
+ExerciseController.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/simplicity/!svn/ver/39/trunk/fitness/src/exercise/ExerciseController.php
+END

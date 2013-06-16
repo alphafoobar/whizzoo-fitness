@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="js/jquery-1.3.2.min.js"></script>  
+  <script>
+  $(document).ready(function(){
+    $.getJSON("http://www.panoramio.com/map/get_panoramas.php?order=popularity&set=full&from=0&to=20&minx=174&miny=-42&maxx=175&maxy=-41&size=small&callback=?",
+        function(data){
+         $.each(data.photos, function(i,item){
+         	var anchor = $("<a></a>").attr("href", item.photo_url).appendTo("#images");
+            $("<img/>").attr("src", item.photo_file_url).appendTo(anchor);
+            if ( i == 20 ) return false;
+          });
+        });
+  });
+  </script>
+  <style>img{ height: 100px; float: left; border: 0px;}</style>
+</head>
+<body>
+  <div id="images"></div>
+</body>
+</html>

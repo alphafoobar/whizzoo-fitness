@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fitness 0.1 $Id$\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-04 19:08+1300\n"
+"PO-Revision-Date: 2009-02-04 19:26+1200\n"
+"Last-Translator: James <alpha.mervin@gmail.ccom>\n"
+"Language-Team: French <alpha.mervin@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: src/imports.php:15
+msgid "config/Constants.php"
+msgstr ""
+
+#: src/imports.php:16
+msgid "util/String.php"
+msgstr ""
+
+#: src/imports.php:17
+msgid "util/HTML.php"
+msgstr ""
+
+#: src/imports.php:18
+msgid "util/Database.php"
+msgstr ""
+
+#: src/imports.php:19
+msgid "util/DatabaseException.php"
+msgstr ""
+
+#: src/imports.php:20
+msgid "config/DatabaseConfig.php"
+msgstr ""
+
+#: src/imports.php:21
+msgid "util/Model.php"
+msgstr ""
+
+#: src/imports.php:23
+msgid "user/UserException.php"
+msgstr ""
+
+#: src/imports.php:24
+msgid "user/User.php"
+msgstr ""
+
+#: src/imports.php:25
+msgid "user/UsersController.php"
+msgstr ""
+
+#: src/imports.php:27
+msgid "exercise/ExerciseTypes.php"
+msgstr ""
+
+#: src/imports.php:28
+msgid "exercise/ExerciseException.php"
+msgstr ""
+
+#: src/imports.php:29
+msgid "exercise/Exercise.php"
+msgstr ""
+
+#: src/imports.php:30
+msgid "exercise/ExerciseController.php"
+msgstr ""
+
+#: src/imports.php:32
+msgid "location/Location.php"
+msgstr ""
+
+#: src/imports.php:33
+msgid "location/LocationController.php"
+msgstr ""
+
+#: src/imports.php:41
+msgid "name"
+msgstr ""
+
+#: src/index.php:10
+#: src/ladder.php:9
+#: src/login.php:10
+#: src/logout.php:9
+#: src/register.php:9
+#: src/workout.php:10
+msgid "imports.php"
+msgstr ""
+
+#: src/index.php:13
+#: src/login.php:13
+#: src/logout.php:12
+msgid "fitness online v0.1"
+msgstr ""
+
+#: src/ladder.php:12
+msgid "Ladders"
+msgstr ""
+
+#: src/ladder.php:14
+#: src/workout.php:24
+msgid "sign_in"
+msgstr ""
+
+#: src/ladder.php:23
+#: src/workout.php:34
+msgid "PHP_SELF"
+msgstr ""
+
+#: src/ladder.php:72
+msgid "type"
+msgstr ""
+
+#: src/ladder.php:72
+msgid "period"
+msgstr ""
+
+#: src/ladder.php:72
+#: src/workout.php:157
+msgid "distance"
+msgstr ""
+
+#: src/ladder.php:72
+#: src/workout.php:144
+msgid "time"
+msgstr ""
+
+#: src/ladder.php:75
+#: src/workout.php:224
+#: src/workout.php:237
+msgid ")}</a></li>\n"
+msgstr ""
+
+#: src/login.php:33
+msgid "back"
+msgstr ""
+
+#: src/logout.php:17
+#: src/register.php:40
+msgid "<!-- looping though input \n"
+msgstr ""
+
+#: src/logout.php:22
+#: src/register.php:45
+#: src/workout.php:21
+msgid "--> \n"
+msgstr ""
+
+#: src/register.php:12
+msgid "register | fitness online v0.1"
+msgstr ""
+
+#: src/register.php:19
+msgid "register"
+msgstr ""
+
+#: src/workout.php:13
+msgid "workouts"
+msgstr ""
+
+#: src/workout.php:16
+msgid "<!-- looping though input, to see why we are here. \n"
+msgstr ""
+
+#: src/workout.php:31
+msgid "New workout:"
+msgstr "Nouvelle séance d'entraînement:"
+
+#: src/workout.php:46
+msgid "s_workout"
+msgstr ""
+
+#: src/workout.php:48
+#: src/workout.php:64
+#: src/workout.php:67
+#: src/workout.php:81
+#: src/workout.php:84
+msgid "exercise"
+msgstr "exercice"
+
+#: src/workout.php:52
+msgid "your exercise has been updated!\n"
+msgstr "votre exercice a été mis à jour!\n"
+
+#: src/workout.php:57
+msgid "thanks for inserting the data!\n"
+msgstr "merci pour l'insertion des données!\n"
+
+#: src/workout.php:66
+msgid "]}<br/>\n"
+msgstr ""
+
+#: src/workout.php:69
+msgid "Edit workout:"
+msgstr "Modifier l'entraînement:"
+
+#: src/workout.php:115
+#: src/workout.php:181
+msgid "workout_type"
+msgstr ""
+
+#: src/workout.php:133
+msgid "other_type"
+msgstr ""
+
+#: src/workout.php:153
+msgid "Y-m-d"
+msgstr ""
+
+#: src/workout.php:154
+msgid "h:i a"
+msgstr ""
+
+#: src/workout.php:160
+msgid "hours"
+msgstr "heures"
+
+#: src/workout.php:161
+msgid "mins"
+msgstr "mins"
+
+#: src/workout.php:162
+msgid "secs"
+msgstr "secs"
+
+#: src/workout.php:165
+msgid "ave_hr"
+msgstr "ave_hr"
+
+#: src/workout.php:168
+msgid "max_hr"
+msgstr ""
+
+#: src/workout.php:171
+msgid "ave_watts"
+msgstr ""
+
+#: src/workout.php:174
+msgid "kcal"
+msgstr ""
+
+#: src/workout.php:177
+msgid "weight"
+msgstr "poids"
+
+#: src/workout.php:178
+msgid "mood"
+msgstr "humeur"
+
+#: src/workout.php:182
+#: src/workout.php:183
+#: src/workout.php:184
+#: src/workout.php:185
+#: src/workout.php:186
+msgid "selected"
+msgstr "sélectionnés"
+
+#: src/workout.php:190
+msgid "notes"
+msgstr "notes"
+
+#: src/workout.php:194
+msgid "location_name"
+msgstr ""
+
+#: src/workout.php:197
+#: src/workout.php:245
+msgid "path"
+msgstr ""
+
